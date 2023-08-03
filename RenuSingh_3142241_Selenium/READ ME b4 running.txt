@@ -1,0 +1,32 @@
+This file just contains the Instructions and the Guidelines showing the Code flow.
+
+Steps for Eclipse Opening & Running :-
+1. Firstly, copy the Maven project (POM Demo) to your system.
+2. Open the Maven project in the eclipse
+3. Check/Verify the Config File (config.properties) under src/main/resources
+The Valid Credentials, Invalid Credentials, GlobalWait Time, url, LumaProduct Searching Text is used.
+Note: Valid Credentials (configurable) used are username = renu.singh@nagarro.com, password = Password123
+
+4. In Config File (config.properties), we can change the browser in which the automation suite will run.
+browser = chrome
+Allowed browser Options = Chrome/Firefox/IE/Edge (Case in-sensitive)
+For invalid browser = abc or chrom or anything else > Gives below Error Message:
+- Browser not supplied/supported.
+- Please provide Browser option in config.properties as : Chrome/Firefox/IE/Edge
+
+5.Please navigate to any testng.xml file in the project and run as TestNG Suite
+6. We can also run as Maven
+Save the SchoolSystem project in Eclipse.
+7. Run and POMDemo project and observe the result in Extent reports > POMDemo\extent-reports folder.
+
+8. Also, observe that the test execution results (test-output content) are stored in the folders:
+- TestExecution_ArchiveResults > Archive of all run results are stored with Date-Timestamp
+- TestExecution_CurrentResults > Stores the current run result with Date-Timestamp of the execution.
+
+
+Application Code Coverage & Screenshots :-
+Refer the 'Application Screenshots of the Console' file explaining the Code Coverage and the Screenshots of the Output processed.
+
+
+Thankyou,
+Renu Singh

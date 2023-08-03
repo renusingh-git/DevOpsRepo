@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="5" total="29" passed="22" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-05-02T21:43:46 IST" name="Suite" finished-at="2023-05-02T21:46:38 IST" duration-ms="171795">
+    <groups>
+    </groups>
+    <test started-at="2023-05-02T21:43:46 IST" name="Test" finished-at="2023-05-02T21:46:38 IST" duration-ms="171795">
+      <class name="tests.Test1_InvalidLoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.Test1_InvalidLoginTest@6fa51cd4]" started-at="2023-05-02T21:43:47 IST" name="setup" finished-at="2023-05-02T21:43:57 IST" duration-ms="10613" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="invalidLogin()[pri:0, instance:tests.Test1_InvalidLoginTest@6fa51cd4]" started-at="2023-05-02T21:43:57 IST" name="invalidLogin" finished-at="2023-05-02T21:44:01 IST" duration-ms="4165" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Home page] but found [Customer Login]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Home page] but found [Customer Login]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at tests.Test1_InvalidLoginTest.invalidLogin(Test1_InvalidLoginTest.java:45)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.Test1_InvalidLoginTest@6fa51cd4]" started-at="2023-05-02T21:44:01 IST" name="tearDown" finished-at="2023-05-02T21:44:02 IST" duration-ms="266" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="copyTestExecution_In_Folder()[pri:0, instance:tests.Test1_InvalidLoginTest@6fa51cd4]" started-at="2023-05-02T21:46:39 IST" name="copyTestExecution_In_Folder" finished-at="2023-05-02T21:46:41 IST" duration-ms="2183" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- copyTestExecution_In_Folder -->
+      </class> <!-- tests.Test1_InvalidLoginTest -->
+      <class name="tests.Test3_Login_DataProvider">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.Test3_Login_DataProvider@268f106e]" started-at="2023-05-02T21:44:15 IST" name="setup" finished-at="2023-05-02T21:44:22 IST" duration-ms="7119" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testLogin(java.lang.String,java.lang.String)[pri:1, instance:tests.Test3_Login_DataProvider@268f106e]" started-at="2023-05-02T21:44:23 IST" name="testLogin" data-provider="testdata" finished-at="2023-05-02T21:44:26 IST" duration-ms="3161" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[renu.singh@nagarro.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Password123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method signature="verifySignOut()[pri:2, instance:tests.Test3_Login_DataProvider@268f106e]" started-at="2023-05-02T21:44:26 IST" name="verifySignOut" finished-at="2023-05-02T21:44:31 IST" duration-ms="4107" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySignOut -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.Test3_Login_DataProvider@268f106e]" started-at="2023-05-02T21:44:31 IST" name="tearDown" finished-at="2023-05-02T21:44:31 IST" duration-ms="302" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.Test3_Login_DataProvider -->
+      <class name="tests.Test6_Login_ProductSelect_Logout">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.Test6_Login_ProductSelect_Logout@5890e879]" started-at="2023-05-02T21:45:40 IST" name="setup" finished-at="2023-05-02T21:45:50 IST" duration-ms="9447" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="login()[pri:1, instance:tests.Test6_Login_ProductSelect_Logout@5890e879]" started-at="2023-05-02T21:45:50 IST" name="login" finished-at="2023-05-02T21:45:54 IST" duration-ms="3929" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="womenTopSelect()[pri:2, instance:tests.Test6_Login_ProductSelect_Logout@5890e879]" started-at="2023-05-02T21:45:54 IST" name="womenTopSelect" finished-at="2023-05-02T21:46:07 IST" duration-ms="12809" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- womenTopSelect -->
+        <test-method signature="menBottomSelect()[pri:3, instance:tests.Test6_Login_ProductSelect_Logout@5890e879]" started-at="2023-05-02T21:46:07 IST" name="menBottomSelect" finished-at="2023-05-02T21:46:19 IST" duration-ms="12435" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- menBottomSelect -->
+        <test-method signature="AddRemoveWishListItem()[pri:4, instance:tests.Test6_Login_ProductSelect_Logout@5890e879]" started-at="2023-05-02T21:46:19 IST" name="AddRemoveWishListItem" finished-at="2023-05-02T21:46:34 IST" duration-ms="15178" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="wishlist-sidebar"]/li/div/div/div[2]/div[2]/a"}
+  (Session info: chrome=112.0.5615.138)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0d13c8d5f83721789b42bc6cdd671d02, findElement {using=xpath, value=//*[@id="wishlist-sidebar"]/li/div/div/div[2]/div[2]/a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\renu2143\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63233}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63233/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0d13c8d5f83721789b42bc6cdd671d02]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="wishlist-sidebar"]/li/div/div/div[2]/div[2]/a"}
+  (Session info: chrome=112.0.5615.138)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0d13c8d5f83721789b42bc6cdd671d02, findElement {using=xpath, value=//*[@id="wishlist-sidebar"]/li/div/div/div[2]/div[2]/a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\renu2143\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63233}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63233/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0d13c8d5f83721789b42bc6cdd671d02
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at pages.HomePage.removeWishListTop(HomePage.java:493)
+at tests.Test6_Login_ProductSelect_Logout.AddRemoveWishListItem(Test6_Login_ProductSelect_Logout.java:55)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddRemoveWishListItem -->
+        <test-method signature="verifySignOut()[pri:5, instance:tests.Test6_Login_ProductSelect_Logout@5890e879]" started-at="2023-05-02T21:46:34 IST" name="verifySignOut" finished-at="2023-05-02T21:46:38 IST" duration-ms="3718" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySignOut -->
+        <test-method signature="tearDown()[pri:6, instance:tests.Test6_Login_ProductSelect_Logout@5890e879]" started-at="2023-05-02T21:46:38 IST" name="tearDown" finished-at="2023-05-02T21:46:38 IST" duration-ms="291" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.Test6_Login_ProductSelect_Logout -->
+      <class name="tests.Test5_ProductSearch_ConfigFile">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.Test5_ProductSearch_ConfigFile@6c284af]" started-at="2023-05-02T21:45:23 IST" name="setup" finished-at="2023-05-02T21:45:29 IST" duration-ms="5877" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="login()[pri:1, instance:tests.Test5_ProductSearch_ConfigFile@6c284af]" started-at="2023-05-02T21:45:29 IST" name="login" finished-at="2023-05-02T21:45:31 IST" duration-ms="2896" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="productSearch()[pri:2, instance:tests.Test5_ProductSearch_ConfigFile@6c284af]" started-at="2023-05-02T21:45:31 IST" name="productSearch" finished-at="2023-05-02T21:45:37 IST" duration-ms="5293" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productSearch -->
+        <test-method signature="verifySignOut()[pri:3, instance:tests.Test5_ProductSearch_ConfigFile@6c284af]" started-at="2023-05-02T21:45:37 IST" name="verifySignOut" finished-at="2023-05-02T21:45:40 IST" duration-ms="3381" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySignOut -->
+        <test-method signature="tearDown()[pri:4, instance:tests.Test5_ProductSearch_ConfigFile@6c284af]" started-at="2023-05-02T21:45:40 IST" name="tearDown" finished-at="2023-05-02T21:45:40 IST" duration-ms="255" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.Test5_ProductSearch_ConfigFile -->
+      <class name="tests.Test4_HomePage_MenuOptions">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.Test4_HomePage_MenuOptions@7e057f43]" started-at="2023-05-02T21:44:31 IST" name="setup" finished-at="2023-05-02T21:44:38 IST" duration-ms="6931" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="login()[pri:10, instance:tests.Test4_HomePage_MenuOptions@7e057f43]" started-at="2023-05-02T21:44:38 IST" name="login" finished-at="2023-05-02T21:44:41 IST" duration-ms="3270" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="salePage()[pri:11, instance:tests.Test4_HomePage_MenuOptions@7e057f43]" started-at="2023-05-02T21:44:41 IST" name="salePage" finished-at="2023-05-02T21:44:47 IST" duration-ms="5654" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- salePage -->
+        <test-method signature="whatsNew()[pri:12, instance:tests.Test4_HomePage_MenuOptions@7e057f43]" started-at="2023-05-02T21:44:47 IST" name="whatsNew" finished-at="2023-05-02T21:44:53 IST" duration-ms="6408" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- whatsNew -->
+        <test-method signature="womenCategory()[pri:13, instance:tests.Test4_HomePage_MenuOptions@7e057f43]" started-at="2023-05-02T21:44:53 IST" name="womenCategory" finished-at="2023-05-02T21:44:59 IST" duration-ms="5845" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- womenCategory -->
+        <test-method signature="menCategory()[pri:14, instance:tests.Test4_HomePage_MenuOptions@7e057f43]" started-at="2023-05-02T21:44:59 IST" name="menCategory" finished-at="2023-05-02T21:45:07 IST" duration-ms="8421" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- menCategory -->
+        <test-method signature="gearCategory()[pri:15, instance:tests.Test4_HomePage_MenuOptions@7e057f43]" started-at="2023-05-02T21:45:07 IST" name="gearCategory" finished-at="2023-05-02T21:45:13 IST" duration-ms="5572" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gearCategory -->
+        <test-method signature="training()[pri:16, instance:tests.Test4_HomePage_MenuOptions@7e057f43]" started-at="2023-05-02T21:45:13 IST" name="training" finished-at="2023-05-02T21:45:18 IST" duration-ms="5432" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- training -->
+        <test-method signature="verifySignOut()[pri:17, instance:tests.Test4_HomePage_MenuOptions@7e057f43]" started-at="2023-05-02T21:45:18 IST" name="verifySignOut" finished-at="2023-05-02T21:45:22 IST" duration-ms="4062" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySignOut -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.Test4_HomePage_MenuOptions@7e057f43]" started-at="2023-05-02T21:45:22 IST" name="tearDown" finished-at="2023-05-02T21:45:23 IST" duration-ms="294" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.Test4_HomePage_MenuOptions -->
+      <class name="tests.Test2_Login_CredentialsConfigFile">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.Test2_Login_CredentialsConfigFile@1750fbeb]" started-at="2023-05-02T21:44:02 IST" name="setup" finished-at="2023-05-02T21:44:08 IST" duration-ms="6383" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="login()[pri:1, instance:tests.Test2_Login_CredentialsConfigFile@1750fbeb]" started-at="2023-05-02T21:44:08 IST" name="login" finished-at="2023-05-02T21:44:11 IST" duration-ms="2909" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="verifySignOut()[pri:2, instance:tests.Test2_Login_CredentialsConfigFile@1750fbeb]" started-at="2023-05-02T21:44:11 IST" name="verifySignOut" finished-at="2023-05-02T21:44:15 IST" duration-ms="3476" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySignOut -->
+        <test-method signature="tearDown()[pri:3, instance:tests.Test2_Login_CredentialsConfigFile@1750fbeb]" started-at="2023-05-02T21:44:15 IST" name="tearDown" finished-at="2023-05-02T21:44:15 IST" duration-ms="277" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.Test2_Login_CredentialsConfigFile -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
